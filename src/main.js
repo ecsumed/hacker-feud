@@ -1,6 +1,10 @@
 /*
   (C) 2020 David Lettier
   lettier.com
+
+  src #1: https://insights.stackoverflow.com/survey/2020#
+  src #2: https://research.hackerrank.com/developer-skills/2020
+  src #3: https://research.hackerrank.com/developer-skills/2019
 */
 
 import App from "./App.svelte";
@@ -8,121 +12,155 @@ import App from "./App.svelte";
 const app = new App({
   target: document.body,
   props: {
-    teamNames: ["Dunning–Kruger Effect", "Impostor Syndrome"],
+    teamNames: ["File-Not-Founders", "Merge-Conflicters"],
     qas: [
       {
-        question: "Which programing language is dead?",
+        question: "Which programing language is the most FEARED?",
+        answers: [
+          {
+            text: "VBA",
+            money: 17
+          },
+          {
+            text: "Objective-C",
+            money: 11
+          },
+          {
+            text: "Perl",
+            money: 6
+          },
+          {
+            text: "Asembly",
+            money: 4
+          },
+          {
+            text: "C",
+            money: 3
+          },
+          {
+            text: "PHP",
+            money: 1
+          }
+        ]
+      },
+      {
+        question: "Name a reason for the biggest bug in production",
+        answers: [
+          {
+            text: "Untested code",
+            money: 17
+          },
+          {
+            text: "Wiped out database",
+            money: 11
+          },
+          {
+            text: "Shut down production servers",
+            money: 6
+          },
+          {
+            text: "Firewall/ssh access",
+            money: 4
+          }
+        ]
+      },
+      {
+        question: "Name a language associated with having a high salary",
         answers: [
           {
             text: "Perl",
             money: 17
           },
           {
-            text: "PHP",
+            text: "Scala",
             money: 11
           },
           {
-            text: "Haskell",
+            text: "Go",
             money: 6
           },
           {
-            text: "Lisp",
+            text: "Rust",
             money: 4
           },
           {
             text: "Ruby",
             money: 3
+          }
+        ]
+      },
+      {
+        question: "What do you do when you get stuck",
+        answers: [
+          {
+            text: "Visit Stackoverflow",
+            money: 17
           },
           {
-            text: "Elm",
+            text: "Do something else, then come back",
+            money: 11
+          },
+          {
+            text: "Watch helpful videos/tutorials",
+            money: 6
+          },
+          {
+            text: "Call friend/co-worker",
+            money: 4
+          },
+          {
+            text: "Physical activity",
+            money: 3
+          },
+          {
+            text: "Play Games",
             money: 1
           }
         ]
       },
       {
-        question: "What is the most hated thing about programming?",
+        question: "Name something you don't want to hear when calling IT help.",
         answers: [
           {
-            text: "Whiteboarding",
+            text: "Reboot",
             money: 17
           },
           {
-            text: "Naming Things",
+            text: "I don't know",
             money: 11
           },
           {
-            text: "Stand-ups",
+            text: "What did you do",
             money: 6
           },
           {
-            text: "OBOE",
+            text: "Is your system backed up?",
             money: 4
-          },
-          {
-            text: "Cache Invalidation",
-            money: 3
-          },
-          {
-            text: "Jira",
-            money: 1
           }
         ]
       },
       {
-        question: "Name a flame war you've been in.",
+        question: "Name something that will frustrate a developer.",
         answers: [
           {
-            text: "Tabs vs Spaces",
+            text: "Spaghetti code",
             money: 17
           },
           {
-            text: "OOP vs Functional",
+            text: "Everything is a priority",
             money: 11
           },
           {
-            text: "GNOME vs KDE",
+            text: "Estimates treated as deadlines",
             money: 6
           },
           {
-            text: "Vim vs Emacs",
+            text: "Bad documentation",
             money: 4
           },
           {
-            text: "Chrome vs Firefox",
-            money: 3
-          },
-          {
-            text: "NoSQL vs RDMS",
-            money: 1
-          }
-        ]
-      },
-      {
-        question: "Which language should you rewrite something in?",
-        answers: [
-          {
-            text: "Rust",
-            money: 17
-          },
-          {
-            text: "Go",
-            money: 11
-          },
-          {
-            text: "JavaScript",
-            money: 6
-          },
-          {
-            text: "Elm",
+            text: "Ghost bugs",
             money: 4
-          },
-          {
-            text: "Kotlin",
-            money: 3
-          },
-          {
-            text: "Elixir",
-            money: 1
           }
         ]
       }
