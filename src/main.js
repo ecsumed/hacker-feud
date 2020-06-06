@@ -15,6 +15,35 @@ const app = new App({
     teamNames: ["File-Not-Founders", "Merge-Conflicters"],
     qas: [
       {
+        question: "A collaboration tool used by developers.",
+        answers: [
+          {
+            text: "Github",
+            money: 17
+          },
+          {
+            text: "Slack",
+            money: 11
+          },
+          {
+            text: "Jira",
+            money: 6
+          },
+          {
+            text: "Google Suite",
+            money: 4
+          },
+          {
+            text: "Confluence",
+            money: 3
+          },
+          {
+            text: "Trello",
+            money: 1
+          }
+        ]
+      },
+      {
         question: "Which programing language is the most FEARED?",
         answers: [
           {
@@ -144,15 +173,15 @@ const app = new App({
         answers: [
           {
             text: "Spaghetti code",
-            money: 17
+            money: 20
           },
           {
             text: "Everything is a priority",
-            money: 11
+            money: 15
           },
           {
             text: "Estimates treated as deadlines",
-            money: 6
+            money: 10
           },
           {
             text: "Bad documentation",
