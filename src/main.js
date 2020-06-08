@@ -5,6 +5,7 @@
   src #1: https://insights.stackoverflow.com/survey/2020#
   src #2: https://research.hackerrank.com/developer-skills/2020
   src #3: https://research.hackerrank.com/developer-skills/2019
+  src #4: https://insights.stackoverflow.com/survey/2019
 */
 
 import App from "./App.svelte";
@@ -15,7 +16,28 @@ const app = new App({
     teamNames: ["File-Not-Founders", "Merge-Conflicters"],
     qas: [
       {
-        question: "A collaboration tool used by developers.",
+        question: "Name something you don't want to hear when calling IT help.",
+        answers: [
+          {
+            text: "Reboot",
+            money: 17
+          },
+          {
+            text: "I don't know",
+            money: 11
+          },
+          {
+            text: "What did you do",
+            money: 6
+          },
+          {
+            text: "Is your system backed up?",
+            money: 4
+          }
+        ]
+      },
+      {
+        question: "Name a collaboration tool used by developers.",
         answers: [
           {
             text: "Github",
@@ -44,36 +66,61 @@ const app = new App({
         ]
       },
       {
-        question: "Which programing language is the most FEARED?",
+        question: "What's something that will frustrate a developer.",
         answers: [
           {
-            text: "VBA",
-            money: 17
+            text: "Spaghetti code",
+            money: 20
           },
           {
-            text: "Objective-C",
-            money: 11
+            text: "Everything is a priority",
+            money: 15
           },
           {
-            text: "Perl",
-            money: 6
+            text: "Estimates treated as deadlines",
+            money: 10
           },
           {
-            text: "Asembly",
+            text: "Bad documentation",
             money: 4
           },
           {
-            text: "C",
+            text: "Ghost bugs",
+            money: 4
+          }
+        ]
+      },
+      {
+        question: "What is the most loved programming language?",
+        answers: [
+          {
+            text: "Rust",
+            money: 17
+          },
+          {
+            text: "Typescript",
+            money: 11
+          },
+          {
+            text: "Python",
+            money: 6
+          },
+          {
+            text: "Kotlin",
+            money: 4
+          },
+          {
+            text: "Go",
             money: 3
           },
           {
-            text: "PHP",
+            text: "Julia",
             money: 1
           }
         ]
       },
       {
-        question: "Name a reason for the biggest bug in production",
+        question: "What is a reason for a bug in production that you have faced?",
         answers: [
           {
             text: "Untested code",
@@ -94,26 +141,26 @@ const app = new App({
         ]
       },
       {
-        question: "Name a language associated with having a high salary",
+        question: "What's the most popular IDE for DevOps/SRE professionals.",
         answers: [
           {
-            text: "Perl",
+            text: "VSC",
             money: 17
           },
           {
-            text: "Scala",
+            text: "Vim",
             money: 11
           },
           {
-            text: "Go",
+            text: "IntelliJ",
             money: 6
           },
           {
-            text: "Rust",
+            text: "Notepad++",
             money: 4
           },
           {
-            text: "Ruby",
+            text: "Sublime",
             money: 3
           }
         ]
@@ -144,52 +191,6 @@ const app = new App({
           {
             text: "Play Games",
             money: 1
-          }
-        ]
-      },
-      {
-        question: "Name something you don't want to hear when calling IT help.",
-        answers: [
-          {
-            text: "Reboot",
-            money: 17
-          },
-          {
-            text: "I don't know",
-            money: 11
-          },
-          {
-            text: "What did you do",
-            money: 6
-          },
-          {
-            text: "Is your system backed up?",
-            money: 4
-          }
-        ]
-      },
-      {
-        question: "Name something that will frustrate a developer.",
-        answers: [
-          {
-            text: "Spaghetti code",
-            money: 20
-          },
-          {
-            text: "Everything is a priority",
-            money: 15
-          },
-          {
-            text: "Estimates treated as deadlines",
-            money: 10
-          },
-          {
-            text: "Bad documentation",
-            money: 4
-          },
-          {
-            text: "Ghost bugs",
-            money: 4
           }
         ]
       }
